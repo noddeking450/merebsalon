@@ -1,14 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Merebsalong</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <h1>Välkommen till Merebsalong!</h1>
     <p>Boka din tid enkelt.</p>
-    <a href="mailto:kontakt@merebsalong.se">Kontakta oss</a>
+
+    <section>
+        <h2>Bokning</h2>
+        <form action="https://formspree.io/f/mgvybpzw" method="POST">
+            <input type="text" name="namn" placeholder="Ditt namn" required /><br />
+            <input type="email" name="epost" placeholder="Din e-post" required /><br />
+            <input type="text" name="datum" placeholder="Önskat datum och tid" required /><br />
+            <textarea name="meddelande" placeholder="Önskad behandling" required></textarea><br />
+            <button type="submit">Boka</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Kontakt</h2>
+        <form action="https://formspree.io/f/mgvybpzw" method="POST">
+            <input type="text" name="namn" placeholder="Ditt namn" required /><br />
+            <input type="email" name="epost" placeholder="Din e-post" required /><br />
+            <textarea name="meddelande" placeholder="Ditt meddelande" required></textarea><br />
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
 </body>
 </html>
